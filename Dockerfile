@@ -1,7 +1,7 @@
 FROM node:latest as build
 COPY . /app
 WORKDIR /app
-RUN npm install
+RUN npm install -p
 RUN npm run build
 
 FROM abiosoft/caddy
