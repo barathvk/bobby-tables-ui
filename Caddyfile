@@ -1,0 +1,11 @@
+0.0.0.0:80 {
+  root /srv
+  gzip
+  proxy /api http://pickpic-api:3001 {
+    websocket
+  }
+  rewrite / {
+    if {path} not_starts_with /api
+    to {path} {path}/ /
+  }  
+}

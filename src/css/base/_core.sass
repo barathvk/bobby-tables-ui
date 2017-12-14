@@ -1,0 +1,89 @@
+html, body
+  padding: 0
+  margin: 0
+  width: 100%
+  height: 100%
+  display: flex
+  flex-direction: column
+  flex: 1
+  font-family: Open Sans
+  color: $primary
+  transition: $transition
+  overflow: hidden
+i.fa
+  &:not(.icon-only)
+    margin-right: 5px
+.flex-column
+  display: flex
+  flex-direction: column
+.flex-row
+  display: flex
+  flex-direction: row
+.fill
+  flex: 1
+.flex-center-align
+  align-items: center
+.flex-center
+  justify-content: center
+  align-items: center
+h1, h2, h3, h4, h5, h6
+  margin: 0
+  padding: 0
+  font-weight: 200
+  color: $primary
+  line-height: 2.0em
+.animated
+  animation-duration: 0.3s
+.border-left
+  border-left: $default-border
+.border-right
+  border-right: $default-border
+.border-bottom
+  border-bottom: $default-border
+.border-top
+  border-top: $default-border
+.border
+  border: $default-border
+.padding-5
+  padding: 5px
+.padding-8
+  padding: 8px
+.padding-16
+  padding: 16px
+.margin-16
+  margin: 16px
+.italics
+  font-style: italic
+.gray-text
+  color: $mediumgray-dark
+.truncate
+  white-space: nowrap
+  overflow: hidden
+  text-overflow: ellipsis
+.space-left
+  margin-left: 5px
+.space-right
+  margin-right: 5px
+@for $i from 1 through 12
+  .flex-#{$i}
+    flex: #{$i}
+.fancy
+  font-family: Lovers Quarrel
+.small-text
+  font-size: 0.7em
+.light-gray-text
+  color: $lightgray-dark
+.yellow-back
+  background-color: $cream-can
+.scroll
+  &::-webkit-scrollbar-track
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3)
+    border-radius: 4px
+    background-color: $lightgray-light
+  &::-webkit-scrollbar
+    width: 6px
+    background-color: $mediumgray-light
+  &::-webkit-scrollbar-thumb
+    border-radius: 4px
+    -webkit-box-shadow: inset 0 0 3px rgba(0,0,0,.3)
+    background-color: $mediumgray-light
