@@ -9,7 +9,6 @@ export default class App extends React.Component {
   }
   componentDidMount() {
     this.setState({ token: store.get('token') })
-    console.log(this.state)
     this.Toast = Toaster.create({
       position: Position.TOP_RIGHT
     })
